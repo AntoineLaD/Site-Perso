@@ -6,34 +6,46 @@
 
 html{
     width: 100vw;
-   
+    height: 100%;
 }
 
 
 .parallax {
     position: relative;
-    background-image: url("scenic-view-lake-dawn.jpg");
     height: 1200px;
-    
+    overflow: hidden;
+}
+
+.parallax::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("abstract-backdrop-illustration-with-multi-colored-design-generated-by-ai.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-  }
+    filter: blur(1px);
+    z-index: 0;
+}
 
 
  
-  .ml4 {
+.ml4 {
     position: relative;
     text-align: center;
     font-weight: 900;
     font-size: 4.5em;
-    width: 100vw;    
-  }
-  .ml4 .letters {
+    font-family: fantasy;
+    width: 100vw;
+    z-index: 1; /* Ensure text is above the background */
+}
+
+.ml4 .letters {
     position: absolute;
-    
     margin: auto;
     left: 0;
     top: 0.3em;
@@ -41,4 +53,7 @@ html{
     opacity: 0; 
     color: white;
     padding-top: 20%;
-  }
+    z-index: 1;
+}
+    
+ 
