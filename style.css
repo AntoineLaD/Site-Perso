@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100vw;
+   
+}
+
+
+.parallax {
+    position: relative;
+    background-image: url("scenic-view-lake-dawn.jpg");
+    height: 1200px;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+
+ 
+  .ml4 {
+    position: relative;
+    text-align: center;
+    font-weight: 900;
+    font-size: 4.5em;
+    width: 100vw;    
+  }
+  .ml4 .letters {
+    position: absolute;
+    
+    margin: auto;
+    left: 0;
+    top: 0.3em;
+    right: 0;
+    opacity: 0; 
+    color: white;
+    padding-top: 20%;
+  }
