@@ -49,3 +49,19 @@ anime.timeline(1)
     scale: ml4.scaleIn,
     duration: ml4.durationIn
   })
+
+  function redirigerAvecAnimation(url, delai) {
+    setTimeout(function() {
+        document.body.classList.add('fade-out');
+        setTimeout(function() {
+            window.location.href = url;
+        }, 500); // Attendre 1 seconde pour que l'animation de fondu se termine
+    }, delai);
+}
+
+// Définir l'URL de redirection et le délai en millisecondes (par exemple, 5 secondes)
+var urlRedirection = "accueil.html";
+var delaiRedirection = 7500; // 5000 millisecondes = 5 secondes
+
+// Appeler la fonction pour démarrer le timer
+redirigerAvecAnimation(urlRedirection, delaiRedirection);

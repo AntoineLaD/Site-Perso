@@ -12,14 +12,20 @@ html{
 
 .parallax {
     position: relative;
-    background-image: url("scenic-view-lake-dawn.jpg");
-    height: 1200px;
-    
+    background-image: url("img/wallpaperflare.com_wallpaper.jpg");
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
+  }
+
+  .fade-out{
+    opacity: 0;
   }
 
 
