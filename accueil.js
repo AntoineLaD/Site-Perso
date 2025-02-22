@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <p>Nombre de dépôts publics: ${data.public_repos}</p>
             <p>Nombre de followers: ${data.followers}</p>
             <p>Nombre de suivis: ${data.following}</p>
+            <p><a href="${data.html_url}">Voir mon profil GitHub</a></p>
         `;
     })
     .catch(error => {
