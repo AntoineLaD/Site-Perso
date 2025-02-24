@@ -37,13 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.project').style.display = 'block';    });
 });
 document.addEventListener('DOMContentLoaded', function() {
-    const token = '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'; // Remplacez par votre token d'accès personnel
     const username = 'AntoineLaD'; // Remplacez par votre nom d'utilisateur GitHub
     const statsDiv = document.getElementById('github-stats');
 
     fetch(`https://api.github.com/users/${username}`, {
         headers: {
-            Authorization: `token ${token}`
+            Authorization: ``
         }
     })
     .then(response => response.json())
